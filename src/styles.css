@@ -1,0 +1,73 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: grey;
+  padding: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+.hamburger {
+  display: none;
+  position: fixed;
+  color: black;
+  font-size: 40px;
+  z-index: 2;
+  cursor: pointer;
+  width: 100%;
+  background-color: orange;
+}
+
+.content {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ham-content {
+  position: fixed;
+  height: 100vh;
+  margin-top: 45px;
+
+  background-color: grey;
+  width: 50vw;
+}
+.a {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 300px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    position: fixed;
+  }
+}
